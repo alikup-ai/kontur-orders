@@ -1,0 +1,11 @@
+# Тема зафиксирована явно: панель показывают на проекторе и прикладывают скриншотами
+# к протоколу совещания, поэтому рендер не должен зависеть от темы браузера.
+[theme]
+base = "light"
+primaryColor = "#0B2A4A"
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#F6F8FA"
+textColor = "#16212E"
+
+[client]
+toolbarMode = "minimal"

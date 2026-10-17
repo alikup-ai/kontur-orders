@@ -1,0 +1,16 @@
+# Состояние приложения создаётся при первом запуске (см. README, «Запуск»).
+# В репозитории его быть не должно: в облаке каждый перезапуск начинается
+# с чистого демонстрационного набора.
+data/kontur_state.json
+data/kontur_state.broken.json
+
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Секреты Streamlit — на случай, если появятся
+.streamlit/secrets.toml
+
+# Рабочие скриншоты
+screen.png
+*.local.*
