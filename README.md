@@ -10,9 +10,11 @@
 ## Запуск
 
 ```bash
-pip install -r requirements.txt
-streamlit run app.py          # откроется http://localhost:8501
-python -m pytest -q           # 107 автотестов, ~45 с
+pip install -r requirements.txt       # рабочие зависимости
+streamlit run app.py                  # откроется http://localhost:8501
+
+pip install -r requirements-dev.txt   # добавляет pytest
+python -m pytest -q                   # 107 автотестов, ~45 с
 ```
 
 Требуется Python 3.10+. Проверено на Python 3.14.3, Streamlit 1.66, Windows 11.
@@ -35,6 +37,7 @@ python -m pytest -q           # 107 автотестов, ~45 с
 | [kontur/demo_data.py](kontur/demo_data.py) | Синтетический набор и привязка заказов к сценариям |
 | [kontur/storage.py](kontur/storage.py) | JSON-хранилище (схема 2): атомарная запись, сохранение повреждённого или старого файла |
 | [app.py](app.py) | Интерфейс Streamlit: навигация, плитки показателей, список вмешательства, карточка |
+| [requirements-dev.txt](requirements-dev.txt) | Зависимости для тестов; в рабочую установку не идут |
 | [.streamlit/config.toml](.streamlit/config.toml) | Тема панели зафиксирована (светлая), чтобы показ и скриншоты не зависели от темы браузера |
 | [tests/](tests/) | Тесты правил, данных, хранилища и интерфейса (через `streamlit.testing`) |
 
