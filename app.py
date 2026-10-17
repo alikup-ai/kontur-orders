@@ -75,7 +75,9 @@ CSS = """
   --red:#C8102E; --orange:#C2620F; --amber:#8A6400; --green:#1C6B45; --grey:#6B7785;
 }
 [data-testid="stMetricValue"], [data-testid="stDataFrame"]{ font-variant-numeric:tabular-nums; }
-.stMain .block-container{ padding-top:.8rem; padding-bottom:3rem; max-width:1540px; }
+/* 4rem сверху — под собственной шапкой Streamlit: в облаке она занимает ~60 px
+   и перекрывала фирменную плашку. Локально шапка пустая, но отступ не мешает. */
+.stMain .block-container{ padding-top:4rem; padding-bottom:3rem; max-width:1540px; }
 
 /* st.header → h2 (заголовок экрана), st.subheader → h3 (раздел внутри экрана) */
 h1, h2{ font-size:1.45rem !important; font-weight:700 !important; letter-spacing:-.015em;
